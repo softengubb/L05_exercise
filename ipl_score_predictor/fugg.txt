@@ -1,0 +1,10 @@
+Flask
+joblib
+numpy
+sklearn
+scikit-learn
+scipy
+matplotlib
+sqlalchemy
+pymysql
+cryptography

@@ -1,0 +1,10 @@
+Konténerizáció:
+A webalkalmazás a 9578 port-ra közvetít.
+A futáshoz szükséges függőségeket a requirems.txt fájl tartalmazza.
+Az alkalmazást a flaskex.py Python kód futtatásával indítjuk el.
+A webalkalmazás futtatható a Python legújabb 3.11-es verzióval, de akár régebbiekkel is.
+
+Adatbázis:
+A webalkalmazás a semysql nevű MySQL konténerhez próbál csatlakozni a 3306 port-on.
+Az alkalmazás a softeng nevű felhasználóként próbál csatlakozni, és a passwd jelszót használja.
+A MySQL adtabázis neve, amit az alkalmazás el szeretne érni: mysqldb.

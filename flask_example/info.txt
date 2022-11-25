@@ -1,0 +1,10 @@
+Konténerizáció:
+A webalkalmazás a 2222 port-ra közvetít.
+A futáshoz szükséges függőségeket a reqs.txt fájl tartalmazza.
+Az alkalmazást az example.py Python kód futtatásával indítjuk el.
+A webalkalmazás futtatható a Python legújabb 3.11-es verzióval, de akár régebbiekkel is.
+
+Adatbázis:
+A webalkalmazás a softengsql nevű MySQL konténerhez próbál csatlakozni a 3306 port-on.
+Az alkalmazás a user nevű felhasználóként próbál csatlakozni, és a userpass jelszót használja.
+A MySQL adtabázis neve, amit az alkalmazás el szeretne érni: softengdb.

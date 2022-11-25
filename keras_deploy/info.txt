@@ -1,0 +1,11 @@
+Konténerizáció:
+A webalkalmazás a 7403 port-ra közvetít.
+A futáshoz szükséges függőségeket a requirs.txt fájl tartalmazza.
+Az alkalmazást a kerasdep.py Python kód futtatásával indítjuk el.
+Az egyik függőség miatt nem futtathatjuk Python 3.11-es verzióval.
+	- próbáljunk régebbi Python image-ből kiindulni pl. python:3.8
+
+Adatbázis:
+A webalkalmazás a imgprocessing nevű MySQL konténerhez próbál csatlakozni a 3306 port-on.
+Az alkalmazás a researcher nevű felhasználóként próbál csatlakozni, és a science jelszót használja.
+A MySQL adtabázis neve, amit az alkalmazás el szeretne érni: images.

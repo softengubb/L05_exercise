@@ -1,0 +1,10 @@
+Flask
+WTForms
+SQLAlchemy
+bcrypt
+requests
+flask-heroku
+gunicorn
+sqlalchemy
+pymysql
+cryptography

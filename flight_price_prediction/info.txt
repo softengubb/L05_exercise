@@ -1,0 +1,10 @@
+Konténerizáció:
+A webalkalmazás az 5599 port-ra közvetít.
+A futáshoz szükséges függőségeket a fuggosegek.txt fájl tartalmazza.
+Az alkalmazást a flightpred.py Python kód futtatásával indítjuk el.
+A webalkalmazás futtatható a Python legújabb 3.11-es verzióval, de akár régebbiekkel is.
+
+Adatbázis:
+A webalkalmazás a sqlcontainer nevű MySQL konténerhez próbál csatlakozni a 3306 port-on.
+Az alkalmazás a hacker nevű felhasználóként próbál csatlakozni, és a megabyte jelszót használja.
+A MySQL adtabázis neve, amit az alkalmazás el szeretne érni: secrets.

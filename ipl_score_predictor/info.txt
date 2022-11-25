@@ -1,0 +1,10 @@
+Konténerizáció:
+A webalkalmazás az 7638 port-ra közvetít.
+A futáshoz szükséges függőségeket a fugg.txt fájl tartalmazza.
+Az alkalmazást a iplscore.py Python kód futtatásával indítjuk el.
+A webalkalmazás futtatható a Python legújabb 3.11-es verzióval, de akár régebbiekkel is.
+
+Adatbázis:
+A webalkalmazás a marketplace nevű MySQL konténerhez próbál csatlakozni a 3306 port-on.
+Az alkalmazás a seller nevű felhasználóként próbál csatlakozni, és a intelcore jelszót használja.
+A MySQL adtabázis neve, amit az alkalmazás el szeretne érni: processors.
