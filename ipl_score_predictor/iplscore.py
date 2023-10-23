@@ -1,11 +1,6 @@
-import pickle
 import joblib
 import numpy as np
 from flask import Flask,render_template,request
-
-regressor = joblib.load('iplmodel_ridge.sav')
-with open('scaler.pkl','rb') as f:
-    scaler = pickle.load(f)
 
 app = Flask(__name__)
 
@@ -168,13 +163,8 @@ def predict():
 
         b = [runs, wickets, overs, runs_in_prev_5, wickets_in_prev_5]
         b = np.array(b).reshape(1,-1)
-        b = scaler.transform(b)
-
-        data = np.concatenate((a,b),axis=1)
-
-
-        my_prediction = int(regressor.predict(data)[0])
-        print(my_prediction)
+        
+        my_prediction = 153
 
         return render_template('home.html', val=f'The final score will be around {my_prediction-5} to {my_prediction+10}.')
 

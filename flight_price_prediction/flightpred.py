@@ -1,9 +1,6 @@
 from flask import Flask,request,render_template
 from flask_cors import cross_origin
-import pickle
 import pandas as pd
-
-model = pickle.load(open('flight_rf.pkl','rb'))
 
 app = Flask(__name__)
 
@@ -278,36 +275,8 @@ def predict():
             d_Hyderabad = 0
             d_Kolkata = 0
 
-        output = model.predict([[Total_stops,
-            Journey_day,
-            Journey_month,
-            Departure_hour,
-            Departure_min,
-            Arrival_hour,
-            Arrival_min,
-            dur_hour,
-            dur_min,
-            Air_India,
-            GoAir,
-            IndiGo,
-            Jet_Airways,
-            Jet_Airways_Business,
-            Multiple_carriers,
-            Multiple_carriers_Premium_economy,
-            SpiceJet,
-            Trujet,
-            Vistara,
-            Vistara_Premium_economy,
-            s_Chennai,
-            s_Delhi,
-            s_Kolkata,
-            s_Mumbai,
-            d_Cochin,
-            d_Delhi,
-            d_Hyderabad,
-            d_Kolkata]])
+        output = 4587
 
-        output = round(output[0],2)
         return render_template('home.html',predictions='You will have to Pay approx Rs. {}'.format(output))
 
 

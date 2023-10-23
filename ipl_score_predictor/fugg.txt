@@ -1,10 +1,6 @@
 Flask
 joblib
 numpy
-sklearn
-scikit-learn
-scipy
-matplotlib
+cryptography
 sqlalchemy
 pymysql
-cryptography

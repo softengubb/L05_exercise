@@ -5,6 +5,6 @@ bcrypt
 requests
 flask-heroku
 gunicorn
+cryptography
 sqlalchemy
 pymysql
-cryptography
